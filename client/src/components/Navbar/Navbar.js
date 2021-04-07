@@ -14,6 +14,7 @@ const Navbar = () => {
   const location = useLocation();
   const history = useHistory();
   const classes = useStyles();
+  const title = {fontFamily: "'Akaya Telivigala', cursive", fontSize:"35px", color:"black"};
 
   const logout = () => {
     dispatch({ type: actionType.LOGOUT });
@@ -35,12 +36,10 @@ const Navbar = () => {
     setUser(JSON.parse(localStorage.getItem('profile')));
   }, [location]);
 
-  const title = {fontFamily: "'Akaya Telivigala', cursive", fontSize:"35px"};
-
   return (
     <AppBar className={classes.appBar} position="static" color="inherit">
       <div className={classes.brandContainer}>
-        <Typography component={Link} to="/" className={classes.heading} variant="h2" style={title} >Okay-Social</Typography>
+        <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center" style={title}>Okay-Social</Typography>
         <img className={classes.image} src={memories} alt="icon" height="60" />
       </div>
       <Toolbar className={classes.toolbar}>
