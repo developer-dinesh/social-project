@@ -14,7 +14,8 @@ const Navbar = () => {
   const location = useLocation();
   const history = useHistory();
   const classes = useStyles();
-  const title = {fontFamily: "'Akaya Telivigala', cursive", fontSize:"35px", color:"black"};
+  const title = {fontFamily: "'Akaya Telivigala', cursive", fontSize:"40px", };
+
 
   const logout = () => {
     dispatch({ type: actionType.LOGOUT });

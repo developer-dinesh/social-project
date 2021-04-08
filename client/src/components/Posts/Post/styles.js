@@ -11,12 +11,12 @@ export default makeStyles({
     border: 'solid',
   },
   fullHeightCard: {
-    height: '100%',
+    height: '100%'
   },
   card: {
-    display: 'flex',
+     
     flexDirection: 'column',
-    justifyContent: 'space-between',
+     
     borderRadius: '15px',
     height: '100%',
     position: 'relative',
@@ -34,11 +34,11 @@ export default makeStyles({
     color: 'white',
   },
   grid: {
-    display: 'flex',
+    display: 'block',
   },
   details: {
-    display: 'flex',
-    justifyContent: 'space-between',
+    display: 'block',
+     
     margin: '20px',
   },
   title: {
@@ -46,7 +46,8 @@ export default makeStyles({
   },
   cardActions: {
     padding: '0 16px 8px 16px',
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
+    
+  }
+   
+  
 });
